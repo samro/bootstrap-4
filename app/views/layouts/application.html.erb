@@ -20,7 +20,7 @@
     <img src="images/logo_ville.png" alt="Logo_ville">
   </a>	
   	<div class="col-1">
-	    <button class="navbar-toggler"appsidebartoggler="" type="button" data-toggle="collapse" data-target="#navbarleft" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <button id="bouton_menu_gauche" class="navbar-toggler" appsidebartoggler="" type="button" data-toggle="" data-target="#navbarleft" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
    </div>
@@ -30,7 +30,7 @@
 		</form> 
 		
   	<div class="col-1">
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarright" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <button id="bouton_menu_droit" class="navbar-toggler" type="button" data-toggle="" data-target="#navbarright" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
      </div>
@@ -44,58 +44,55 @@
 <div class="container-fluid">
 	<div class="row">
 		
-	  <div class="col-sm-2 col-lg-2 collapse show width" id="navbarleft">
 	  	
-	  		<nav class="navbar bg-dark navbar-dark align-self-start collapse" id="navbarSupportedContent">
-				<div class="navbar-collapse">
-					<ul class="navbar-nav flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">Disabled</a>
-						</li>
-					</ul> 
-				</div>
-			</nav>
-			
-		</div>
+  		<nav class="navbar bg-dark navbar-dark align-self-start col-sm-2 col-lg-2" id="navbarleft">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul> 
+			</div>
+		</nav>
+		
   
 
     
-		<main class="col-sm col-lg">
+		<!-- <main class="col-sm col-lg"> -->
+		<main class="">
 			<%= yield %>
 		</main>
 		
 		
-	  <div class="col-sm-2 col-lg-2 collapse show width" id="navbarright">
 	  	
-	  		<nav class="navbar bg-dark navbar-dark align-self-start collapse" id="navbarSupportedContent">
-				<div class="navbar-collapse">
-					<ul class="navbar-nav flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">Disabled</a>
-						</li>
-					</ul> 
-				</div>
-			</nav>
+  		<nav class="navbar bg-dark navbar-dark align-self-start col-sm-2 col-lg-2" id="navbarright">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul> 
+			</div>
+		</nav>
 			
-		</div>
    
   </div>
 </div>

@@ -17,11 +17,43 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
- #navbarright {
-    // other code omitted
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+
+
+
+main {
+    //width:100%;
+    position:absolute;
+    left: 200px;
+    right: 200px;
+    transition:left .4s;
+    //transition:right .4s;
+}
+main.menu_gauche_masque{
+    left:0;
+}
+main.menu_droit_masque{
+    right:0;
+}
+
+#navbarleft {
+    left:0;
+    //top: 0;
+    //bottom:0;
+    width:200px;
+    position:absolute;
+    transition:width .4s;
+}
+#navbarleft.menu_gauche_masque {
+    width:0;
+}
+#navbarright {
+    right:0;
+    //top: 0;
+    //bottom:0;
+    width:200px;
+    position:absolute;
+    transition:width .4s;
+}
+#navbarright.menu_droit_masque {
+    width:0;
 }
