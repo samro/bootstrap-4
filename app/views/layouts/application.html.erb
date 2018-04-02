@@ -12,40 +12,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+<!-- <body class="bg-dark"> -->
 <body>
 	
 
-<nav class="navbar bg-dark navbar-dark justify-content-between">
-   <a class="navbar-brand" href="#">
-    <img src="images/logo_ville.png" alt="Logo_ville">
-  </a>	
-  	<div class="col-1">
-	    <button id="bouton_menu_gauche" class="navbar-toggler" appsidebartoggler="" type="button" data-toggle="" data-target="#navbarleft" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar bg-dark navbar-dark">
+	<div class="header order-1">
+		<a class="navbar-brand" href="#">
+	    	<img src="images/logo_ville.png" alt="Logo_ville" width="40px">
+		</a>
+	
+	    <button id="bouton_menu_gauche" class="navbar-toggler"  type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-   </div>
-   		<form class="form-inline" action="#">
-			<input class="form-control mr-sm-2" type="text" placeholder="Rechercher">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">OK</button>
+		
+	</div>
+	    
+	    <div class="w-100 d-block d-sm-none order-3 order-sm-2"></div>
+   		<form class="order-4 order-sm-3" action="#">
+			<div class="input-group">
+			  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+			  <div class="input-group-append">
+			    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icomoon icomoon-search"></span></button>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">dans l'annuaire</a>
+			      <a class="dropdown-item" href="#">dans le matériel</a>
+			    </div>
+			  </div>
+			</div>   
+						
+			<!-- <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Rechercher">
+			<button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">OK</button> -->
 		</form> 
 		
-  	<div class="col-1">
-	    <button id="bouton_menu_droit" class="navbar-toggler" type="button" data-toggle="" data-target="#navbarright" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <button id="bouton_menu_droit" class="navbar-toggler order-2 order-sm-3" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-     </div>
-     
 		
 </nav>
 
 
 
 
-<div class="container-fluid">
+<div class="container-fluid bg-">
 	<div class="row">
 		
 	  	
-  		<nav class="navbar bg-dark navbar-dark align-self-start col-sm-2 col-lg-2" id="navbarleft">
+  		<nav class="navbar bg-dark navbar-dark d-block" id="navbarleft">
 			<div class="navbar-collapse">
 				<ul class="navbar-nav flex-column">
 					<li class="nav-item">
@@ -74,7 +87,7 @@
 		
 		
 	  	
-  		<nav class="navbar bg-dark navbar-dark align-self-start col-sm-2 col-lg-2" id="navbarright">
+  		<nav class="navbar bg-dark navbar-dark d-block" id="navbarright">
 			<div class="navbar-collapse">
 				<ul class="navbar-nav flex-column">
 					<li class="nav-item">
