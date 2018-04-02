@@ -19,41 +19,92 @@
 
 
 
-
 main {
-    //width:100%;
-    position:absolute;
-    left: 200px;
-    right: 200px;
-    transition:left .4s;
-    //transition:right .4s;
-}
-main.menu_gauche_masque{
-    left:0;
-}
-main.menu_droit_masque{
-    right:0;
+  padding: 10px;
+  //background-color: white;
+  //width:100%;
+  position: absolute;
 }
 
 #navbarleft {
-    left:0;
-    //top: 0;
-    //bottom:0;
-    width:200px;
-    position:absolute;
-    transition:width .4s;
-}
-#navbarleft.menu_gauche_masque {
-    width:0;
+  width:200px;
+  position:absolute;
+  height: 100%;
+  //transition:width .4s;
 }
 #navbarright {
+  width:200px;
+  height: 100%;
+  position:absolute;
+  //transition:width .4s;
+}
+
+
+//petit écran
+@media screen and (max-width: 768px) {
+  main {
+    left: 0px;
+    right: 0px;
+  }   
+  main.menu_gauche_masque{
+    //transition:left .4s; //ne fonctionne pas pour le retour si pas dans la classe main directement et alors incomptaible avec la transition vers la droite, l'attribution de la valeur est passée dans js'
+    left:200px;
+  }
+  main.menu_droit_masque{
+    right:200px;
+  }
+  
+  #navbarleft {
+    left: -200px;
+  }
+  #navbarleft.menu_gauche_masque {
+    left: 0px;
+  }
+
+  #navbarright {
+    right: -200px;
+  }
+  #navbarright.menu_droit_masque {
+    //width:0;
+    right: -0;
+  }
+}
+////////////////////////
+
+
+ 
+ // grand écran
+@media screen and (min-width: 768px) {
+  main {
+    left: 200px;
+    right: 200px;
+  }
+
+  main.menu_gauche_masque{
+    //transition:left .4s; //ne fonctionne pas pour le retour si pas dans la classe main directement et alors incomptaible avec la transition vers la droite, l'attribution de la valeur est passée dans js'
+    left:0;
+  }
+  main.menu_droit_masque{
     right:0;
-    //top: 0;
-    //bottom:0;
-    width:200px;
-    position:absolute;
-    transition:width .4s;
+  }
+  #navbarleft {
+    left:0;
+  }  
+  #navbarleft.menu_gauche_masque {
+    left: -200px;
+    //width:0;
+  }
+
+  #navbarright {
+    right:0;
+  }
+  #navbarright.menu_droit_masque {
+    right: -200px;
+  }  
 }
-#navbarright.menu_droit_masque {
-    width:0;
-}
+////////////////////
+
+
+
+
+
