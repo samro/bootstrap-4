@@ -1,0 +1,58 @@
+<nav class="navbar bg-dark navbar-dark fixed-top">
+	<!-- <div class="header order-1"> -->
+		<div class="header">
+	    <button id="bouton_menu_gauche" class="navbar-toggler"  type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+		<a class="navbar-brand" href="#">
+	    	<img src="images/logo_ville.png" alt="Logo_ville" width="40px">
+		</a>
+	</div>
+	    
+	    
+	    <!-- <div class="w-100 d-block d-sm-none order-3 order-sm-2"></div> -->
+   		<!-- <form class="order-4 order-sm-3" action="#"> -->
+	   		<form class="" action="#">
+			<div class="input-group">
+			  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+			  <div class="input-group-prepend">
+			    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icomoon icomoon-search"></span></button>
+			    <div class="dropdown-menu dropdown-menu-right">
+			      <a class="dropdown-item" href="#">dans l'annuaire</a>
+			      <a class="dropdown-item" href="#">dans le matériel</a>
+			    </div>
+			  </div>
+			</div>   
+						
+			<!-- <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Rechercher">
+			<button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">OK</button> -->
+		</form> 
+		
+    <ul class="navbar-nav ml-auto"> <!-- ml-auto est ici ce qui permet d'aligner la navigation à droite -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-secondary text-light" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>		
+		
+	    <!-- <button id="bouton_menu_droit" class="navbar-toggler order-2 order-sm-3" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> -->	    
+	    	<button id="bouton_menu_droit" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+		
+</nav> 
